@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <search placeholder="두 글자 이상 입력 후 엔터" />
+    <contact-list />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Search from '@/components/Search';
+import ContactList from '@/components/ContactList';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Search,
+    ContactList,
   }
 }
 </script>
